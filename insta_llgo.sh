@@ -8,7 +8,6 @@ wget https://go.dev/dl/go$GO_VERSION.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go$GO_VERSION.linux-amd64.tar.gz
 
 # Install nano if not already installed
-sudo apt update
 sudo apt install -y nano
 
 # Add Go binary to PATH in ~/.bashrc
@@ -22,3 +21,6 @@ source "$BASHRC"
 
 # Verify Go installation
 go version
+
+#Install nuclei 
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
