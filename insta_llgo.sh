@@ -24,3 +24,11 @@ go version
 
 #Install nuclei 
 go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+
+cd go/bin
+
+cp nuclei /usr/local/bin
+
+cd
+
+nuclei
